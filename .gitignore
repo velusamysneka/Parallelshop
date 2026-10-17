@@ -1,0 +1,64 @@
+# Environment and secrets
+.env
+*.env
+.env.local
+.env.*.local
+*.json
+service_account.json
+credentials.json
+*.pem
+*.key
+# Non-secret JSON that must be tracked (and shipped by `gcloud run deploy --source .`)
+!data/sample_dataset.json
+!frontend/**/*.json
+!frontend/.firebaserc
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+.venv-*/
+venv/
+ENV/
+
+# Data files
+*.csv
+*.parquet
+*.tar.gz
+*.zip
+data/raw/
+data/instacart/
+
+# IDE & OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node / Frontend
+node_modules/
+dist/
+.next/
+out/
+.firebase/
+firebase-debug.log
